@@ -59,7 +59,7 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
-             InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", callback_data=f"SUPPORT_CHAT|{chat_id}"),
+            
         ],
         [
             InlineKeyboardButton(
@@ -67,7 +67,7 @@ def stream_markup_timer(_, chat_id, played, dur):
                 callback_data="GetTimer",
             )
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [InlineKeyboardButton(text=_["SUPPORT_CHANNEL"], callback_data="ᴜᴘᴅᴀᴛᴇs")],
     ]
     return buttons
 
@@ -81,7 +81,7 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [InlineKeyboardButton(text=_["SUPPORT_CHANNEL"], callback_data="ᴜᴘᴅᴀᴛᴇs")],
     ]
     return buttons
 
@@ -100,7 +100,7 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"],
+                text=_["SUPPORT_CHANNEL"],
                 callback_data=f"forceclose {videoid}|{user_id}",
             ),
         ],
@@ -118,8 +118,8 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"],
-                callback_data=f"forceclose {videoid}|{user_id}",
+                text=_["SUPPORT_CHANNEL"],
+                callback_data= {videoid}|{user_id}",
             ),
         ],
     ]
