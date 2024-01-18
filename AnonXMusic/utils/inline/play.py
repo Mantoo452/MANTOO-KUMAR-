@@ -22,8 +22,9 @@ def track_markup(_, videoid, user_id, channel, fplay):
                 text=_["CLOSE_BUTTON"],
                 callback_data=f"forceclose {videoid}|{user_id}",
             )
-        ],
-    ]
+       
+ 
+      
     return buttons
 
 
@@ -66,9 +67,9 @@ def stream_markup_timer(_, chat_id, played, dur):
                 text=f"{played} {bar} {dur}",
                 callback_data="GetTimer",
             )
-        ],
         
-    ]
+      
+    
     return buttons
 
 
