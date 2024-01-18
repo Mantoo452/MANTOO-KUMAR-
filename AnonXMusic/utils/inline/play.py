@@ -85,7 +85,7 @@ def stream_markup(_, chat_id):
     ]
     return buttons
 
-[InlineKeyboardButton(text=_["SUPPORT_CHANNEL"], callback_data="ᴜᴘᴅᴀᴛᴇs")],
+               , callback_data="ᴜᴘᴅᴀᴛᴇs")],
 def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
     buttons = [
         [
