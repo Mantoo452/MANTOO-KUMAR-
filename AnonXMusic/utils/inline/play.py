@@ -85,7 +85,7 @@ def stream_markup(_, chat_id):
     ]
     return buttons
 
-               , callback_data="ᴜᴘᴅᴀᴛᴇs")],
+               
 def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
     buttons = [
         [
@@ -97,7 +97,7 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
                 text=_["P_B_2"],
                 callback_data=f"AnonyPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
             ),
-        ],
+       
         [
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"],
